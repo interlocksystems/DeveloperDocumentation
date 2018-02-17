@@ -884,7 +884,7 @@ existing ones in the specified storage area (0x00 for RAM, 0x01 for
 persistent).
 
 Complete lines are not required. A line begins with a decimal line number
-followed by a space and is terminated with a \<LF\>.
+followed by a space and is terminated with a <LF>.
 
 See the orbBasic Interpreter document for complete information.
 
