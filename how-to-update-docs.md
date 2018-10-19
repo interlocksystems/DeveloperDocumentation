@@ -45,7 +45,7 @@ or 'Macrolab'. It is auto-generated based in the contents of the folder `src/con
 
 All `.md` files inside the content folders for each platform will be parsed and added to the menu based on a few
 config lines at the top of each `.md` file. What this means is that if you wish to add a new section you need only
-to create a new `.md` file inside one of the two platform folders (`/src/content/<platform>`) with the following
+to create a new `.md` file inside one of the two platform folders (`/src/content/\<platform\>`) with the following
 lines at the beginning of the file, let's see an example using the `src/content/sphero/start.md` file.
 
 ```markdown

@@ -17,11 +17,11 @@ It is the ultimate helper app.
 
 Ultimately an orbBasic program is a sequence of program lines ending with a NULL (00h) character.
 
-    <program> := <line(s)> <NULL>
+    \<program\> := <line(s)> \<NULL\>
 
 Each line begins with a line number, some whitespace, a program statement and a terminating LF (10h) character:
 
-    <line> := <line number> <space(s)> <statement> <LF>
+    \<line\> := <line number> <space(s)> \<statement\> \<LF\>
 
 The interpreter is given a starting line number when invoked as programs do not need to start from the first line in the program.
 Once the statement on a line is complete, execution continues at the next line in the program stream which may not actually be the next line numerically in the program.
@@ -68,13 +68,13 @@ As of version 0.9
 Since orbBasic isn't tokenized during download both syntactic and runtime errors can occur.
 ASCII versions are sent via asynchronous message ID 09h in the format:
 
-Line xx: <error message><LF>
+Line xx: <error message>\<LF\>
 
 or as a 4-byte binary message through ID 0Ah in the format:
 
 Line #  | Line #   | Error #   | Error #
 ------- | -------- | --------- | --------
-<msb>   | <lsb>    | <msb>     | <lsb>
+\<msb\>   | \<lsb\>    | \<msb\>     | \<lsb\>
 
 The following error messages are currently defined:
 
